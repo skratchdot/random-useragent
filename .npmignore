@@ -1,0 +1,7 @@
+.git*
+_ignore/
+test/
+.DS_Store
+.npm-debug.log
+.project
+.travis.yml

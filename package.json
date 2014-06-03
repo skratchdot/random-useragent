@@ -1,0 +1,49 @@
+{
+  "name": "random-useragent",
+  "description": "Get a random useragent (with an optional filter)",
+  "version": "0.1.0",
+  "homepage": "https://github.com/skratchdot/random-useragent",
+  "author": "skratchdot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skratchdot/random-useragent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skratchdot/random-useragent/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/skratchdot/random-useragent/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/random-useragent",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "random-seed": "^0.2.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "request": "^2.36.0",
+    "ua-parser-js": "^0.6.2",
+    "xml2js": "^0.4.4"
+  },
+  "keywords": [
+    "random",
+    "useragent",
+    "user-agent",
+    "user",
+    "agent",
+    "data",
+    "web",
+    "developer"
+  ]
+}
