@@ -1,4 +1,4 @@
-exports.data = [
+[
 	{
 		"folder": "/Browsers - Windows/Legacy Browsers",
 		"description": "Arora 0.6.0 - (Vista)",
@@ -13719,4 +13719,4 @@ exports.data = [
 		"osVersion": "Express",
 		"cpuArchitecture": ""
 	}
-];
+]
