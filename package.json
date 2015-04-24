@@ -1,9 +1,12 @@
 {
   "name": "random-useragent",
   "description": "Get a random useragent (with an optional filter)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/skratchdot/random-useragent",
-  "author": "skratchdot",
+  "author": {
+    "name": "skratchdot",
+    "email": "git@skratchdot.com"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/skratchdot/random-useragent.git"
@@ -29,12 +32,12 @@
   },
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.4.0",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-watch": "~0.6.1",
-    "request": "^2.36.0",
-    "ua-parser-js": "^0.6.2",
-    "xml2js": "^0.4.4"
+    "request": "^2.55.0",
+    "ua-parser-js": "^0.7.6",
+    "xml2js": "^0.4.8"
   },
   "keywords": [
     "random",

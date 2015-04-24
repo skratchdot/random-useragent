@@ -1,6 +1,8 @@
 # random-useragent
 
+[![NPM version](https://badge.fury.io/js/random-useragent.svg)](http://badge.fury.io/js/random-useragent)
 [![Build Status](https://travis-ci.org/skratchdot/random-useragent.png?branch=master)](https://travis-ci.org/skratchdot/random-useragent)
+[![Code Climate](https://codeclimate.com/github/skratchdot/random-useragent.png)](https://codeclimate.com/github/skratchdot/random-useragent)
 [![Coverage Status](https://coveralls.io/repos/skratchdot/random-useragent/badge.png)](https://coveralls.io/r/skratchdot/random-useragent)
 [![Dependency Status](https://david-dm.org/skratchdot/random-useragent.svg)](https://david-dm.org/skratchdot/random-useragent)
 [![devDependency Status](https://david-dm.org/skratchdot/random-useragent/dev-status.svg)](https://david-dm.org/skratchdot/random-useragent#info=devDependencies)
