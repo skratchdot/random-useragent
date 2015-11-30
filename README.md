@@ -3,9 +3,11 @@
 [![NPM version](https://badge.fury.io/js/random-useragent.svg)](http://badge.fury.io/js/random-useragent)
 [![Build Status](https://travis-ci.org/skratchdot/random-useragent.png?branch=master)](https://travis-ci.org/skratchdot/random-useragent)
 [![Code Climate](https://codeclimate.com/github/skratchdot/random-useragent.png)](https://codeclimate.com/github/skratchdot/random-useragent)
-[![Coverage Status](https://coveralls.io/repos/skratchdot/random-useragent/badge.png)](https://coveralls.io/r/skratchdot/random-useragent)
+[![Coverage Status](https://coveralls.io/repos/skratchdot/random-useragent/badge.svg?branch=master&service=github)](https://coveralls.io/github/skratchdot/random-useragent?branch=master)
 [![Dependency Status](https://david-dm.org/skratchdot/random-useragent.svg)](https://david-dm.org/skratchdot/random-useragent)
 [![devDependency Status](https://david-dm.org/skratchdot/random-useragent/dev-status.svg)](https://david-dm.org/skratchdot/random-useragent#info=devDependencies)
+
+[![NPM](https://nodei.co/npm/random-useragent.png)](https://npmjs.org/package/random-useragent)
 
 
 ## Description
@@ -21,6 +23,8 @@ Install the module with: `npm install random-useragent`
 var random_useragent = require('random-useragent');
 random_useragent.getRandom(); // gets a random user agent string
 ```
+
+- [Live example on Tonic](https://tonicdev.com/npm/random-useragent)
 
 
 ## Documentation

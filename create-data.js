@@ -5,6 +5,7 @@
  * Copyright (c) 2014 skratchdot
  * Licensed under the MIT license.
  */
+/*eslint prefer-template:0, no-console:0 */
 'use strict';
 
 // config
