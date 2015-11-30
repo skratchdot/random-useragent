@@ -1,6 +1,6 @@
 {
   "name": "random-useragent",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Get a random useragent (with an optional filter)",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "url": "git://github.com/skratchdot/random-useragent.git"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.11.0"
   },
   "dependencies": {
     "random-seed": "^0.3.0"
