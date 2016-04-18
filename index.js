@@ -21,17 +21,14 @@ var getData = function (filter) {
 	return typeof filter === 'function' ? useragents.filter(filter) : useragents;
 };
 
-var getRandom = function (fn, filter) {
-	var data = exports[fn](filter);
-	return data.length ? data[rand.intBetween(0, data.length - 1)] : null;
-};
-
 exports.getRandom = function (filter) {
-	return getRandom('getAll', filter);
+	var data = getData(filter);
+	return data.length ? data[rand.intBetween(0, data.length - 1)].userAgent : null;
 };
 
 exports.getRandomData = function (filter) {
-	return cloneData(getRandom('getAllData', filter));
+	var data = getData(filter);
+	return data.length ? cloneData(data[rand.intBetween(0, data.length - 1)]) : null;
 };
 
 exports.getAll = function (filter) {
