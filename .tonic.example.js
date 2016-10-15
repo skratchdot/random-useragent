@@ -1,3 +1,5 @@
-var random_useragent = require('random-useragent');
-var result = random_useragent.getRandom(); // gets a random user agent string
-console.log(result);
+var randomUseragent = require('random-useragent');
+var ua = randomUseragent.getRandom(); // gets a random user agent string
+var data = randomUseragent.getRandomData(); // gets random user agent data
+console.log('Random useragent:', ua);
+console.log('Random useragent data:', data);

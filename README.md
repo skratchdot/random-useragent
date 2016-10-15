@@ -20,8 +20,8 @@ Get a random user agent (with an optional filter to select from a specific set o
 Install the module with: `npm install random-useragent`
 
 ```javascript
-var random_useragent = require('random-useragent');
-random_useragent.getRandom(); // gets a random user agent string
+var randomUseragent = require('random-useragent');
+randomUseragent.getRandom(); // gets a random user agent string
 ```
 
 - [Live example on Tonic](https://tonicdev.com/npm/random-useragent)
@@ -80,19 +80,19 @@ Get an array of all the parsed user agent data (optionally using a filter).
 
 Get a random user agent string:
 ```javascript
-random_useragent.getRandom();
+randomUseragent.getRandom();
 ```
 
 Get a random Firefox user agent string:
 ```javascript
-random_useragent.getRandom(function (ua) {
+randomUseragent.getRandom(function (ua) {
 	return ua.browserName === 'Firefox';
 });
 ```
 
 Get a random user agent with a version >= 20:
 ```javascript
-random_useragent.getRandom(function (ua) {
+randomUseragent.getRandom(function (ua) {
 	return parseFloat(ua.browserVersion) >= 20;
 });
 ```
@@ -108,11 +108,11 @@ which is located here:
 - [Direct Link](http://techpatterns.com/downloads/firefox/useragentswitcher.xml)
 
 
-## Release History
+## Links
 
-#### Version 0.1.0 (Released June 4, 2014)
-
-- initial release
+- [Source Code](https://github.com/skratchdot/random-useragent)
+- [Changelog](https://github.com/skratchdot/random-useragent/blob/master/CHANGELOG.md)
+- [Live example on Tonic](https://tonicdev.com/npm/random-useragent)
 
 
 ## License
