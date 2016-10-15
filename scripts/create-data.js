@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
  * random-useragent
  * https://github.com/skratchdot/random-useragent
@@ -10,7 +11,7 @@
 
 // config
 var xmlUrl = 'http://techpatterns.com/downloads/firefox/useragentswitcher.xml';
-var file = __dirname + '/useragent-data.json';
+var file = __dirname + '/../useragent-data.json';
 
 // requires
 var fs = require('fs');

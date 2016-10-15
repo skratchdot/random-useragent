@@ -1,10 +1,20 @@
 {
   "name": "random-useragent",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Get a random useragent (with an optional filter)",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "changelog": "github_changelog_generator",
+    "clean": "rimraf .nyc_output/ coverage/",
+    "cover": "nyc npm test",
+    "coveralls": "cat coverage/lcov.info | coveralls --verbose",
+    "data": "./scripts/create-data.js",
+    "lint": "eslint *.js scripts/*.js",
+    "prepublish": "npm-run-all lint test",
+    "test": "mocha test.js",
+    "watch": "npm-run-all clean --parallel watch:test watch:lint",
+    "watch:lint": "watch 'npm run lint' .",
+    "watch:test": "npm run test -- -w"
   },
   "author": "skratchdot",
   "license": "MIT",
@@ -24,17 +34,29 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.9",
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^2.0.0",
-    "gulp-istanbul": "^0.10.4",
-    "gulp-mocha": "^2.2.0",
-    "isparta": "^4.0.0",
-    "request": "^2.72.0",
+    "coveralls": "^2.11.14",
+    "eslint": "^3.8.0",
+    "mocha": "^3.1.2",
+    "npm-run-all": "^3.1.1",
+    "nyc": "^8.3.1",
+    "request": "^2.75.0",
+    "rimraf": "^2.5.4",
     "ua-parser-js": "^0.7.10",
-    "xml2js": "^0.4.16"
+    "watch": "^1.0.1",
+    "xml2js": "^0.4.17"
   },
   "tonicExampleFilename": ".tonic.example.js",
+  "nyc": {
+    "all": true,
+    "include": [
+      "index.js"
+    ],
+    "reporter": [
+      "text",
+      "html",
+      "lcovonly"
+    ]
+  },
   "keywords": [
     "random",
     "useragent",
