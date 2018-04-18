@@ -33,14 +33,21 @@
     "random-seed": "^0.3.0"
   },
   "devDependencies": {
+    "bluebird": "^3.5.1",
     "chai": "^3.5.0",
     "coveralls": "^2.11.14",
+    "csv-parse": "^2.2.0",
+    "dev-null": "^0.1.1",
     "eslint": "^3.8.0",
+    "lodash": "^4.17.5",
     "mocha": "^3.1.2",
+    "moment": "^2.22.1",
     "npm-run-all": "^3.1.1",
     "nyc": "^8.3.1",
+    "promisepipe": "^1.0.1",
     "request": "^2.75.0",
     "rimraf": "^2.5.4",
+    "stream-transform": "^1.0.2",
     "ua-parser-js": "^0.7.10",
     "watch": "^1.0.1",
     "xml2js": "^0.4.17"
