@@ -4,7 +4,7 @@
   "description": "Get a random useragent (with an optional filter)",
   "main": "index.js",
   "scripts": {
-    "changelog": "github_changelog_generator",
+    "changelog": "github_changelog_generator --user skratchdot --project random-useragent",
     "clean": "rimraf .nyc_output/ coverage/",
     "cover": "nyc npm test",
     "coveralls": "cat coverage/lcov.info | coveralls --verbose",
