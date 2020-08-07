@@ -26,7 +26,7 @@ var uaParser = new UAParser();
 
 // functions
 var parseUseragents = function (folderName, folderItem) {
-	if (folderItem.hasOwnProperty('useragent')) {
+	if (Object.prototype.hasOwnProperty.call(folderItem, 'useragent')) {
 		folderItem.useragent.forEach(function (useragent) {
 			var parsed;
 			useragent = useragent.$;
@@ -64,7 +64,7 @@ var parseFolder = function (folderName, folder) {
 	folder.forEach(function (folderItem) {
 		var subFolderName = folderName + '/' + folderItem.$.description;
 		// continue parsing folders
-		if (folderItem.hasOwnProperty('folder')) {
+		if (Object.prototype.hasOwnProperty.call(folderItem, 'folder')) {
 			parseFolder(subFolderName, folderItem.folder);
 		}
 		// parse any useragents
