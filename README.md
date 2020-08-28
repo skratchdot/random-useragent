@@ -20,7 +20,7 @@ Get a random user agent (with an optional filter to select from a specific set o
 Install the module with: `npm install random-useragent`
 
 ```javascript
-var randomUseragent = require('random-useragent');
+const randomUseragent = require('random-useragent');
 randomUseragent.getRandom(); // gets a random user agent string
 ```
 

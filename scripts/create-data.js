@@ -10,28 +10,27 @@
 'use strict';
 
 // config
-var xmlUrl = 'http://techpatterns.com/downloads/firefox/useragentswitcher.xml';
-var file = __dirname + '/../useragent-data.json';
+const xmlUrl = 'http://techpatterns.com/downloads/firefox/useragentswitcher.xml';
+const file = __dirname + '/../useragent-data.json';
 
 // requires
-var fs = require('fs');
-var request = require('request');
-var xml2js = require('xml2js');
-var UAParser = require('ua-parser-js');
+const fs = require('fs');
+const request = require('request');
+const xml2js = require('xml2js');
+const UAParser = require('ua-parser-js');
 
 // instance
-var useragents = [];
-var xmlParser = new xml2js.Parser();
-var uaParser = new UAParser();
+const useragents = [];
+const xmlParser = new xml2js.Parser();
+const uaParser = new UAParser();
 
 // functions
-var parseUseragents = function (folderName, folderItem) {
+const parseUseragents = function (folderName, folderItem) {
 	if (Object.prototype.hasOwnProperty.call(folderItem, 'useragent')) {
 		folderItem.useragent.forEach(function (useragent) {
-			var parsed;
 			useragent = useragent.$;
 			uaParser.setUA(useragent.useragent);
-			parsed = uaParser.getResult();
+			const parsed = uaParser.getResult();
 			if (typeof useragent.useragent === 'string' && useragent.useragent.length > 0) {
 				useragents.push({
 					folder: folderName,
@@ -60,9 +59,9 @@ var parseUseragents = function (folderName, folderItem) {
 	}
 };
 
-var parseFolder = function (folderName, folder) {
+const parseFolder = function (folderName, folder) {
 	folder.forEach(function (folderItem) {
-		var subFolderName = folderName + '/' + folderItem.$.description;
+		const subFolderName = folderName + '/' + folderItem.$.description;
 		// continue parsing folders
 		if (Object.prototype.hasOwnProperty.call(folderItem, 'folder')) {
 			parseFolder(subFolderName, folderItem.folder);
