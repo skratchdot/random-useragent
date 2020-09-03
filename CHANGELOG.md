@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased](https://github.com/skratchdot/random-useragent/tree/HEAD)
+
+[Full Changelog](https://github.com/skratchdot/random-useragent/compare/0.4.0...HEAD)
+
+**Closed issues:**
+
+- it's too old to use it :\( [\#8](https://github.com/skratchdot/random-useragent/issues/8)
+
+**Merged pull requests:**
+
+- Replace var with let or const [\#11](https://github.com/skratchdot/random-useragent/pull/11) ([DavideViolante](https://github.com/DavideViolante))
+
+## [0.4.0](https://github.com/skratchdot/random-useragent/tree/0.4.0) (2020-08-07)
+
+[Full Changelog](https://github.com/skratchdot/random-useragent/compare/0.3.1...0.4.0)
+
 ## [0.3.1](https://github.com/skratchdot/random-useragent/tree/0.3.1) (2016-10-15)
 
 [Full Changelog](https://github.com/skratchdot/random-useragent/compare/0.3.0...0.3.1)
