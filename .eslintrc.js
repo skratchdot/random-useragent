@@ -10,5 +10,7 @@ module.exports = {
         "ecmaVersion": 11
     },
     "rules": {
+        "prefer-const": "error",
+        "no-var": "error"
     }
 };

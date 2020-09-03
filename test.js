@@ -1,17 +1,15 @@
 'use strict';
 /* globals describe, it */
-var expect = require('chai').expect;
-var lib = require('./index.js');
-var iterations = 100;
+const expect = require('chai').expect;
+const lib = require('./index.js');
+const iterations = 100;
 
 describe('random-useragent', function () {
 	it('don\'t change data', function () {
-		var d1;
-		var d2;
-		var key = 'someNewKey';
-		d1 = lib.getAllData();
+		const key = 'someNewKey';
+		const d1 = lib.getAllData();
 		d1[0][key] = 'foo';
-		d2 = lib.getAllData();
+		const d2 = lib.getAllData();
 		expect(Object.prototype.hasOwnProperty.call(d1[0], key)).to.equal(true);
 		expect(Object.prototype.hasOwnProperty.call(d2[0], key)).to.equal(false);
 	});
@@ -22,15 +20,14 @@ describe('random-useragent', function () {
 		expect(lib.getAllData()).to.be.an('array');
 	});
 	it('randomization works', function (done) {
-		var i;
-		for (i = 0; i < iterations; i++) {
+		for (let i = 0; i < iterations; i++) {
 			expect(lib.getRandom()).to.be.a('string');
 			expect(lib.getRandomData()).to.be.an('object');
 		}
 		done();
 	});
 	it('valid filters work', function () {
-		var filter = function (item) {
+		const filter = function (item) {
 			return item.browserName === 'Chrome';
 		};
 		expect(lib.getRandom(filter)).to.be.a('string');
@@ -41,7 +38,7 @@ describe('random-useragent', function () {
 		expect(lib.getAllData(filter)).to.have.length.gt(0);
 	});
 	it('invalid filters work', function () {
-		var filter = function (item) {
+		const filter = function (item) {
 			return item.browserName === 'Some Fake Browser';
 		};
 		expect(lib.getRandom(filter)).to.be.null;
