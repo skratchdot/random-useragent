@@ -18,7 +18,30 @@ const cloneData = function (data) {
 };
 
 const getData = function (filter) {
-	return typeof filter === 'function' ? useragents.filter(filter) : useragents;
+	const agents = typeof filter === 'function' ? useragents.filter(filter) : useragents;
+	return agents.map(x => ({
+		folder: '',
+		description: '',
+		userAgent: '',
+		appCodename: '',
+		appName: '',
+		appVersion: '',
+		platform: '',
+		vendor: '',
+		vendorSub: '',
+		browserName: '',
+		browserMajor: '',
+		browserVersion: '',
+		deviceModel: '',
+		deviceType: '',
+		deviceVendor: '',
+		engineName: '',
+		engineVersion: '',
+		osName: '',
+		osVersion: '',
+		cpuArchitecture: '',
+		...x,
+	}))
 };
 
 exports.getRandom = function (filter) {

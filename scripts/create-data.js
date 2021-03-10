@@ -18,6 +18,7 @@ const fs = require('fs');
 const request = require('request');
 const xml2js = require('xml2js');
 const UAParser = require('ua-parser-js');
+const _ = require('lodash')
 
 // instance
 const useragents = [];
@@ -32,7 +33,7 @@ const parseUseragents = function (folderName, folderItem) {
 			uaParser.setUA(useragent.useragent);
 			const parsed = uaParser.getResult();
 			if (typeof useragent.useragent === 'string' && useragent.useragent.length > 0) {
-				useragents.push({
+				const ua = {
 					folder: folderName,
 					description: useragent.description,
 					userAgent: useragent.useragent,
@@ -53,7 +54,8 @@ const parseUseragents = function (folderName, folderItem) {
 					osName: parsed.os.name || '',
 					osVersion: parsed.os.version || '',
 					cpuArchitecture: parsed.cpu.architecture || ''
-				});
+				};
+				useragents.push(_.pickBy(ua, x => x !== ''));
 			}
 		});
 	}
