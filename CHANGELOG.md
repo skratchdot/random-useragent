@@ -2,7 +2,11 @@
 
 ## [Unreleased](https://github.com/skratchdot/random-useragent/tree/HEAD)
 
-[Full Changelog](https://github.com/skratchdot/random-useragent/compare/0.4.0...HEAD)
+[Full Changelog](https://github.com/skratchdot/random-useragent/compare/0.5.0...HEAD)
+
+## [0.5.0](https://github.com/skratchdot/random-useragent/tree/0.5.0)
+
+[Full Changelog](https://github.com/skratchdot/random-useragent/compare/0.4.0...0.5.0)
 
 **Closed issues:**
 
