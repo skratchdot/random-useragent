@@ -7,11 +7,9 @@
 
 [![NPM](https://nodei.co/npm/random-useragent.png)](https://npmjs.org/package/random-useragent)
 
-
 ## Description
 
 Get a random user agent (with an optional filter to select from a specific set of user agents).
-
 
 ## Getting Started
 
@@ -24,7 +22,6 @@ randomUseragent.getRandom(); // gets a random user agent string
 
 - [Live example on NPM Runkit](https://npm.runkit.com/random-useragent)
 
-
 ## Documentation
 
 #### .getRandom(filter)
@@ -32,8 +29,9 @@ randomUseragent.getRandom(); // gets a random user agent string
 Get a random user agent string (optionally using a filter).
 
 Example Result:
+
 ```javascript
-'Mozilla/5.0 (Windows NT 6.2; rv:20.0) Gecko/20121202 Firefox/20.0'
+'Mozilla/5.0 (Windows NT 6.2; rv:20.0) Gecko/20121202 Firefox/20.0';
 ```
 
 #### .getRandomData(filter)
@@ -41,6 +39,7 @@ Example Result:
 Get a random user agent's parsed data (optionally using a filter).
 
 Example Result:
+
 ```javascript
 {
 	"folder": "/Browsers - Windows/Legacy Browsers",
@@ -77,24 +76,26 @@ Get an array of all the parsed user agent data (optionally using a filter).
 ## Examples
 
 Get a random user agent string:
+
 ```javascript
 randomUseragent.getRandom();
 ```
 
 Get a random Firefox user agent string:
+
 ```javascript
 randomUseragent.getRandom(function (ua) {
-	return ua.browserName === 'Firefox';
+  return ua.browserName === 'Firefox';
 });
 ```
 
 Get a random user agent with a version >= 20:
+
 ```javascript
 randomUseragent.getRandom(function (ua) {
-	return parseFloat(ua.browserVersion) >= 20;
+  return parseFloat(ua.browserVersion) >= 20;
 });
 ```
-
 
 ## Source Of User Agents
 
@@ -105,13 +106,11 @@ which is located here:
 - [Forum Post](http://techpatterns.com/forums/about304.html)
 - [Direct Link](http://techpatterns.com/downloads/firefox/useragentswitcher.xml)
 
-
 ## Links
 
 - [Source Code](https://github.com/skratchdot/random-useragent)
 - [Changelog](https://github.com/skratchdot/random-useragent/blob/master/CHANGELOG.md)
 - [Live example on Tonic](https://tonicdev.com/npm/random-useragent)
-
 
 ## License
 
